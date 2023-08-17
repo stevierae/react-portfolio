@@ -1,0 +1,10 @@
+
+footer {
+    height: 75px;
+    margin: 0px;
+    text-align: center;
+}
+footer h3 {
+    display: inline-block;
+    vertical-align: middle;
+}

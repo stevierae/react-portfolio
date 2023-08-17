@@ -3,6 +3,8 @@ import Header from './header';
 import About from './pages/about';
 import Portfolio from './pages/portfolio';
 import Contact from './pages/contact';
+import Banner from './banner';
+import Footer from './footer';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -23,10 +25,12 @@ export default function PortfolioContainer() {
 
   return (
     <div>
+        <Banner />
       {/* We are passing the currentPage from state and the function to update it */}
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       <main className="mx-3">{renderPage()}</main>
+      <Footer/>
     </div>
   );
 }
